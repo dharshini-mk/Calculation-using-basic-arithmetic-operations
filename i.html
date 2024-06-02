@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator_22CSR046</title>
+    <style>
+        body {
+            background-image: url("https://i.pinimg.com/736x/e4/33/03/e43303729421ba43dea9b4b3d9ff9eb7.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: white;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .container {
+            width: 600px;
+            background-color: #000000;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+            height: 300px;
+            position: relative;
+            margin-left: 150px;
+            margin-top: 150px;
+            display: inline-block;
+        }
+        button{
+            margin-top: 50px;
+            margin-right: 30px;
+            background-color: rgb(255, 255, 255);
+            color: black;
+            font-weight: bolder;
+            font-size: 20px;
+            transition: transform 0.3s ease;
+            border-radius: 5px;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        button:hover,
+        button:focus {
+            transform: translateY(-3px);
+            background-color: rgb(144, 144, 144);
+            color: black;
+        }
+        .box{
+            font-size: 30px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center; margin-top: 0px; margin-bottom: 40px">Simple Calculator</h1>
+        <form>
+            <div class="box">
+                <label for="num1" style="font-family: Georgia, 'Times New Roman', Times, serif; color: rgb(183, 183, 183); margin-right: 10px">Number 1:</label>
+                <input type="number" name="num1" id="num1" style="padding: 5px; font-size: 15px"><br><br>
+                <label for="num2" style="font-family: Georgia, 'Times New Roman', Times, serif; color: rgb(183, 183, 183); margin-right: 8px">Number 2:</label>
+                <input type="number" name="num2" id="num2" style="padding: 5px; font-size: 15px">
+            </div>
+            <center>
+            <button type="submit" value="add" formaction="http://localhost:4000/add" formmethod="get">+</button>
+            <button type="submit" value="sub" formaction="http://localhost:4000/sub" formmethod="get">-</button>
+            <button type="submit" value="product" formaction="http://localhost:4000/product" formmethod="get">×</button>
+            <button type="submit" value="divide" formaction="http://localhost:4000/divide" formmethod="get">/</button>
+            <button type="submit" value="modulo" formaction="http://localhost:4000/modulo" formmethod="get">%</button>
+            <button type="submit" value="power" formaction="http://localhost:4000/power" formmethod="get">^</button>
+        </center></form>
+    </div>
+</body>
+</html>
